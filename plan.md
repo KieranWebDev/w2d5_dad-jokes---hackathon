@@ -15,9 +15,9 @@ link html , js, css pages - done
     display joke done
     get new joke done
 
-    like or dislike joke - buttons
+    like or dislike joke - buttons - done
 
-    store jokes accordingly into one of two boxes. like and dislike.
+    store jokes accordingly into one of two boxes. like and - dislike. - done
 
     basic positioning and css
 

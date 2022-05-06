@@ -1,10 +1,11 @@
 body {
-  background-color: orange;
+  background-color: #fcbf49;
+  font-family:  'Quicksand', sans-serif;
 }
 
 h1 {
   color: black;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Bungee Outline', cursive;
   font-size: 60px;
   text-decoration: solid;
   text-decoration: underline;
@@ -15,8 +16,7 @@ h1 {
 }
 
 h2 {
-  color: rgb(179, 70, 26);
-  font-family: 'Courier New', Courier, monospace;
+  color: #bc6e0a;
   font-size: 30px;
   text-decoration: solid;
   /* position: relative; */
@@ -39,8 +39,7 @@ h2 {
   align-items: center;
 }
 
-.like-button,
-dislike-button {
+.like-button, .dislike-button {
   /* position: relative; */
   background-color: transparent;
   border-width: 0cm;
@@ -80,8 +79,8 @@ dislike-button {
 }
 
 .list-style {
-  font-family: 'Courier New', Courier, monospace;
   border: solid black 1px;
+  background-color: #eae2b7;
   font-size: 25px;
   width: 40%;
 }
