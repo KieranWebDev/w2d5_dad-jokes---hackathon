@@ -12,34 +12,40 @@
 <body>
 
     <h1>Dad Jokes - Funny or Not!?</h1>
-    <h2>Click an emoji to pick your favorit dad jokes!</h2>
+    <h2>Click an emoji to pick your favorite dad jokes!</h2>
     <div>
-        <h2 id="joke"></h2>
+        <!-- <h2 class="joke-focus" id="joke"></h2> -->
     </div>
 
-    <div>
-        <button id="new-joke" class="new-joke">Get a new joke</button>
-    </div>
+    <div class="button-container">
 
-    <div>
-        <button id="like-button" class = "like-button relative"> <img src="https://cliparting.com/wp-content/uploads/2018/03/emoji-transparent-2018-9.png" 😂like</button>
-        <button id="dislike-button" class = "dislike-button relative"> <img
+        <button id="like-button" class="like-button relative"> <img class="image-emoji"
+                src="https://cliparting.com/wp-content/uploads/2018/03/emoji-transparent-2018-9.png"></button>
+
+        <!-- <button id="new-joke" class="new-joke-button">Get a new joke</button> -->
+
+        <h2 class="joke-focus" id="joke"></h2>
+
+
+        <button id="dislike-button" class="dislike-button relative"><img class="image-emoji"
                 src="https://cliparting.com/wp-content/uploads/2018/03/emoji-transparent-2018-1.png"></button>
+
     </div>
 
-    <div>
-        <h3>like list</h3>
-        <ul id="like-list" class="like-list">
-        </ul>
+    <div class="list-container">
+        <div class="list-style">
+            <h3>Like list</h3>
+            <ul id="like-list" class="like-list">
+            </ul>
+        </div>
+
+
+        <div class="list-style">
+            <h3>Dislike list</h3>
+            <ul id="dislike-list" class="dislike-list">
+            </ul>
+        </div>
     </div>
-
-
-    <div>
-        <h3>dislike list</h3>
-        <ul id="dislike-list" class="dislike-list">
-        </ul>
-    </div>
-
     <script src="main.js"></script>
 </body>
 

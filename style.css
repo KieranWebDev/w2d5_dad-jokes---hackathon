@@ -1,69 +1,101 @@
 body {
-    background-color: orange;
+  background-color: orange;
 }
 
 h1 {
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 80px;
-    text-decoration: solid; 
-    text-decoration: underline;
-    position: relative;
-    top: 2.5%;
-    left: 10%;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  text-decoration: solid;
+  text-decoration: underline;
+  /* position: relative; */
+  top: 2.5%;
+  left: 10%;
+  text-align: center;
 }
 
 h2 {
-    color: rgb(179, 70, 26);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    text-decoration: solid; 
-    position: relative;
-    top: 2.5%;
-    left: 17%;
+  color: rgb(179, 70, 26);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  text-decoration: solid;
+  /* position: relative; */
+  top: 2.5%;
+  left: 17%;
+  text-align: center;
 }
 
-.like-button.relative {
-    position: relative;
-    background-color: transparent;
-    border-width: 0cm;
-    top: 50%;
-    left: 10%;
-   
+.joke-focus {
+  color: black;
+  font-size: 40px;
+  width: 50%;
 }
 
-.dislike-button.relative {
-    position: relative;
-    background-color: transparent;
-    border-width: 0cm;
-    top: 25%;
-    left: 25%;
+/* buttons */
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.new-joke {
-    color: rgb(255, 255, 255);
-    font-family: 'Courier New', Courier, monospace;
-    background-color: black;
-    border-width: 2cm;
-    border-radius: 50%;
-    font-size: 30px;
-    text-decoration: solid; 
-    position: relative;
-    top: 2.5%;
-    left: 30%;
+.like-button,
+dislike-button {
+  /* position: relative; */
+  background-color: transparent;
+  border-width: 0cm;
+  top: 50%;
+  left: 10%;
 }
 
-.like-list {
-    font-family: 'Courier New', Courier, monospace;
-    position: relative;
-    left: 6%;
+.dislike-button {
+  /* position: relative; */
+  background-color: transparent;
+  border-width: 0cm;
+  top: 25%;
+  left: 25%;
 }
 
-.dislike-list {
-    font-family: 'Courier New', Courier, monospace;
-    position: relative;
-    left: 60%;
-    top: 10%;
+.image-emoji {
+  height: 250px;
+  width: 250px;
+}
+/* 
+.new-joke-button {
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  border-width: 2cm;
+  border-radius: 50%;
+  font-size: 30px;
+  text-decoration: solid; */
+/* position: relative; */
+/* top: 2.5%;
+        left: 30%; }*/
+
+.list-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
 }
 
+.list-style {
+  font-family: 'Courier New', Courier, monospace;
+  border: solid black 1px;
+  font-size: 25px;
+  width: 40%;
+}
+
+.list-style > h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+.list-style > ul {
+  margin-bottom: 10px;
+}
+
+/* .dislike-list {
+  font-family: 'Courier New', Courier, monospace;
+  border:solid, black, 1px;
+  font-size: 25px;
+  width:40%; */

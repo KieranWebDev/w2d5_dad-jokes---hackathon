@@ -18,8 +18,8 @@ async function getJoke() {
 getJoke();
 
 //Retrieve a new joke button
-newJokeBtn = document.querySelector('#new-joke');
-newJokeBtn.addEventListener('click', getJoke);
+// newJokeBtn = document.querySelector('#new-joke');
+// newJokeBtn.addEventListener('click', getJoke);
 
 // Add to like list
 const Likelist = document.querySelector('#like-list');
@@ -29,6 +29,7 @@ let likeJokeList = function () {
   let newListItem = document.createElement('li');
   newListItem.innerText = joke.innerText;
   Likelist.appendChild(newListItem);
+  getJoke();
 };
 
 likeButton.addEventListener('click', likeJokeList);
@@ -40,9 +41,9 @@ dislikeButton = document.querySelector('#dislike-button');
 
 let dislikeJokeList = function () {
   let secondListItem = document.createElement('li');
-  
   secondListItem.innerText = joke.innerText;
   dislikeList.appendChild(secondListItem);
+  getJoke();
 };
 
 dislikeButton.addEventListener('click', dislikeJokeList);
