@@ -1,1 +1,69 @@
+body {
+    background-color: orange;
+}
+
+h1 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    text-decoration: solid; 
+    text-decoration: underline;
+    position: relative;
+    top: 2.5%;
+    left: 10%;
+}
+
+h2 {
+    color: rgb(179, 70, 26);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-decoration: solid; 
+    position: relative;
+    top: 2.5%;
+    left: 17%;
+}
+
+.like-button.relative {
+    position: relative;
+    background-color: transparent;
+    border-width: 0cm;
+    top: 50%;
+    left: 10%;
+   
+}
+
+.dislike-button.relative {
+    position: relative;
+    background-color: transparent;
+    border-width: 0cm;
+    top: 25%;
+    left: 25%;
+
+}
+
+.new-joke {
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    border-width: 2cm;
+    border-radius: 50%;
+    font-size: 30px;
+    text-decoration: solid; 
+    position: relative;
+    top: 2.5%;
+    left: 30%;
+}
+
+.like-list {
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    left: 6%;
+}
+
+.dislike-list {
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    left: 60%;
+    top: 10%;
+}
 
