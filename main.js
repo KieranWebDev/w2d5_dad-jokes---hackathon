@@ -1,7 +1,6 @@
+const joke = document.querySelector('#joke');
 
-const jokeList = document.querySelector("#joke")
-
-// fetch a dad joke
+//fetch data and display joke
 fetch('https://icanhazdadjoke.com/', {
   headers: { accept: 'application/json' },
 });
@@ -11,13 +10,13 @@ async function getJoke() {
     headers: { accept: 'application/json' },
   });
   let jsonJokeData = await response.json();
-  jokeList.innerText = jsonJokeData.joke;
+
+  joke.innerText = jsonJokeData.joke;
   console.log(jsonJokeData.joke);
-  
 }
 
 getJoke();
 
-const joke = jokeList.innerText 
-
-console.log(joke)
+//get a new joke button
+newJokeBtn = document.querySelector('#new-joke');
+newJokeBtn.addEventListener('click', getJoke);
