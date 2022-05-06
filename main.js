@@ -17,37 +17,31 @@ async function getJoke() {
 
 getJoke();
 
-//get a new joke button
+//Retrieve a new joke button
 newJokeBtn = document.querySelector('#new-joke');
 newJokeBtn.addEventListener('click', getJoke);
 
+// Add to like list
+const Likelist = document.querySelector('#like-list');
+likeButton = document.querySelector('#like-button');
 
+let likeJokeList = function () {
+  let newListItem = document.createElement('li');
+  newListItem.innerText = joke.innerText;
+  Likelist.appendChild(newListItem);
+};
 
-// LIKE
-const list = document.querySelector("#theList");
-likeButton = document.querySelector("#like-list");
+likeButton.addEventListener('click', likeJokeList);
 
+// add to dislike list
 
-let likeJokeList = function(){
-    let newListItem = document.createElement("li");
-newListItem.innerText = joke.innerText;
-list.appendChild(newListItem);
-}
+const dislikeList = document.querySelector('#dislike-list');
+dislikeButton = document.querySelector('#dislike-button');
 
-likeButton.addEventListener("click", likeJokeList)
+let dislikeJokeList = function () {
+  let secondListItem = document.createElement('li');
+  secondListItem.innerText = joke.innerText;
+  dislikeList.appendChild(secondListItem);
+};
 
-
-// DISLIKE
-
-const listTwo = document.querySelector("#listTwo");
-dislikeButton = document.querySelector("#dislike-list");
-
-
-let dislikeJokeList = function(){
-    let secondListItem = document.createElement("li");
-secondListItem.innerText = joke.innerText;
-listTwo.appendChild(secondListItem);
-}
-
-dislikeButton.addEventListener("click", dislikeJokeList)
-
+dislikeButton.addEventListener('click', dislikeJokeList);
