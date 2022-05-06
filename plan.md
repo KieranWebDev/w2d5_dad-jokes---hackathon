@@ -1,13 +1,12 @@
 Plan
 
-check the API
+check the API - done
 
-fetch the data.
-check we the recieve data correctly
+fetch the data. - done
+check we the recieve data correctly -done
 
-make basic HTML, js, css pages
-
-set up the basic structure on HTML.
+make basic HTML skeleton - done
+link html , js, css pages - done
 
                 organize data in JS.
 
