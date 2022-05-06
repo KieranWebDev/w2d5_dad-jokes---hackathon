@@ -10,9 +10,10 @@ link html , js, css pages - done
 
                 organize data in JS.
 
-    fetch aysnc
+    fetch aysnc done
 
-    display joke
+    display joke done
+    get new joke done
 
     like or dislike joke - buttons
 
