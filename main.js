@@ -1,4 +1,5 @@
-console.log('test');
+
+const jokeList = document.querySelector("#joke")
 
 // fetch a dad joke
 fetch('https://icanhazdadjoke.com/', {
@@ -10,8 +11,13 @@ async function getJoke() {
     headers: { accept: 'application/json' },
   });
   let jsonJokeData = await response.json();
+  jokeList.innerText = jsonJokeData.joke;
   console.log(jsonJokeData.joke);
+  
 }
 
 getJoke();
-// console.log(jsonJokeData.joke);
+
+const joke = jokeList.innerText 
+
+console.log(joke)
