@@ -40,6 +40,7 @@ dislikeButton = document.querySelector('#dislike-button');
 
 let dislikeJokeList = function () {
   let secondListItem = document.createElement('li');
+  
   secondListItem.innerText = joke.innerText;
   dislikeList.appendChild(secondListItem);
 };
